@@ -1,0 +1,28 @@
+{
+  "name": "kalkulator-kuadrat-desktop",
+  "version": "1.0.0",
+  "description": "Aplikasi desktop kalkulator akar persamaan kuadrat",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.kalkulator.kuadrat",
+    "productName": "Kalkulator Kuadrat",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "author": "Doly Mardianto",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.0.0"
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Akar Kuadrat</title>
+    <link rel="stylesheet" href="kalkulus.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="judul">
+            <h1>Kalkulator Kuadrat</h1>
+        </div>
+    </nav>
+
+    <!-- Konten Utama -->
+    <div class="container">
+        <div class="card kalkulus">
+            <h3>Masukkan nilai a, b, dan c dari persamaan kuadrat</h3>
+
+            <input type="text" id="a" placeholder="Masukkan nilai a">
+            <input type="text" id="b" placeholder="Masukkan nilai b">
+            <input type="text" id="c" placeholder="Masukkan nilai c">
+
+            <button onclick="hitungAkar()">Hitung Akar</button>
+            <button onclick="resetForm()">Reset</button>
+
+            <div class="result">
+                <p id="akar1"></p>
+                <p id="akar2"></p>
+            </div>
+
+            <div class="card-body">
+                <h4>Riwayat Perhitungan</h4>
+                <ul id="history-list"></ul>
+            </div>
+        </div>
+
+        <div class="biodata">
+            <h4>Pengembang:</h4>
+            <p>Doly Mardianto</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
